@@ -1,0 +1,19 @@
+{
+  "xsappname": "json2pdf_2-8ce4cdc6trial-dev",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.API_Access",
+      "description": "Permission to access the PDF generation API."
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "API_User",
+      "description": "Role for using the PDF API",
+      "scope-references": [
+        "$XSAPPNAME.API_Access"
+      ]
+    }
+  ]
+}

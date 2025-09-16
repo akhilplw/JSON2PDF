@@ -1,0 +1,32 @@
+{
+  "name": "json2pdf_2",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^9",
+    "@sap/xssec": "^4",
+    "express": "^4",
+    "pdfkit": "^0.17.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.13.0",
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": ">=8"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": "xsuaa"
+      }
+    }
+  }
+}
